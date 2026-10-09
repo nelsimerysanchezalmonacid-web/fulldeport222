@@ -1,0 +1,500 @@
+/* --- ESTILOS GENERALES Y RESET --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0b0b0b;
+    color: #f3f3f3;
+    line-height: 1.6;
+}
+
+/* --- MENÚ DE NAVEGACIÓN --- */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(11, 11, 11, 0.95);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    z-index: 1000;
+    border-bottom: 1px solid #222;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.logo span {
+    color: #ff3333;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #ccc;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: #fff;
+}
+
+/* Menú Hamburguesa (Móvil) */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+/* --- SECCIÓN HERO --- */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 700px;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.hero-content h1 span {
+    color: #ff3333;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #ff3333;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: #e02e2e;
+    transform: translateY(-2px);
+}
+
+/* --- SECCIÓN DE VIDEOS (EN FILA HORIZONTAL) --- */
+.videos-section {
+    padding: 100px 50px 80px 50px;
+    background-color: #0b0b0b;
+}
+
+.videos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.video-card {
+    background-color: #141414;
+    border: 1px solid #222;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+    border-color: #444;
+}
+
+.video {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-color: #000;
+}
+
+.video iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-info {
+    padding: 20px;
+}
+
+.video-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.video-info p {
+    font-size: 0.95rem;
+    color: #aaa;
+}
+
+/* --- SECCIÓN DE CATÁLOGOS --- */
+#contenido {
+    padding: 80px 50px;
+    background-color: #0f0f0f;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header span {
+    color: #ff3333;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+}
+
+.section-header h2 {
+    font-size: 2.2rem;
+    color: #fff;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    color: #aaa;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content-card {
+    background-color: #141414;
+    border: 1px solid #222;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.content-card:hover {
+    transform: translateY(-5px);
+}
+
+.catalog-img-container {
+    width: 100%;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #222;
+}
+
+.catalog-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content-card h3 {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.content-card p {
+    font-size: 0.85rem;
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+/* --- SECCIÓN NOSOTROS --- */
+#nosotros {
+    padding: 80px 20px;
+    background-color: #0b0b0b;
+}
+
+.about-section {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-section p {
+    color: #ccc;
+    font-size: 1.05rem;
+    margin-bottom: 15px;
+}
+
+/* --- FOOTER --- */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #070707;
+    color: #666;
+    font-size: 0.85rem;
+    border-top: 1px solid #1a1a1a;
+}
+
+/* --- RESPONSIVE PARA CELULARES --- */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #0b0b0b;
+        padding: 20px 0;
+        text-align: center;
+        border-bottom: 1px solid #222;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .videos-section, #contenido {
+        padding: 60px 20px;
+    }
+}
+/* ==========================================
+   ESTILOS: FORMULARIO MAYORISTA FULL DEPOR
+   Paleta: Negro, Blanco y Rojo Deportivo
+   ================================---------- */
+
+.mayorista-section {
+    background-color: #111111; /* Fondo negro elegante */
+    padding: 5rem 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mayorista-card {
+    background: #ffffff; /* Tarjeta blanca limpia */
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 520px;
+    border-top: 5px solid #e60012; /* Toque rojo deportivo superior */
+}
+
+.mayorista-card h2 {
+    text-align: center;
+    color: #1a1a1a;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.mayorista-card p {
+    text-align: center;
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+}
+
+/* Campos del Formulario */
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+    color: #222;
+    font-size: 0.88rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.form-group input, 
+.form-group select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    outline: none;
+    background-color: #f9f9f9;
+    color: #111;
+    transition: all 0.3s ease;
+}
+
+/* Efecto al hacer clic o escribir en los inputs */
+.form-group input:focus, 
+.form-group select:focus {
+    border-color: #e60012; /* Resalta en rojo Full Depor */
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(230, 0, 18, 0.1);
+}
+
+/* Botón de envío principal */
+.btn-enviar {
+    width: 100%;
+    background-color: #e60012; /* Rojo deportivo principal */
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: background 0.3s, transform 0.1s;
+    margin-top: 0.5rem;
+}
+
+.btn-enviar:hover {
+    background-color: #b3000e; /* Rojo más oscuro al pasar el mouse */
+}
+
+.btn-enviar:active {
+    transform: scale(0.99);
+}
+/* ==========================================
+   ESTILOS: PIE DE PÁGINA (FOOTER) FULL DEPOR
+   ========================================== */
+
+.footer-full-depor {
+    background-color: #080808; /* Fondo negro profundo */
+    color: #fff;
+    padding: 3.5rem 5% 1.5rem;
+    border-top: 2px solid #222;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.footer-col h3 {
+    color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.footer-col h3 span {
+    color: #e60012; /* Rojo deportivo Full Depor */
+}
+
+.footer-col h4 {
+    color: #e60012;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.footer-col p {
+    color: #aaa;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 0.6rem;
+}
+
+/* Línea divisoria de Copyright */
+.footer-bottom {
+    border-top: 1px solid #1a1a1a;
+    padding-top: 1.5rem;
+    text-align: center;
+    color: #777;
+    font-size: 0.85rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}

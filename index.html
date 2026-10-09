@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FULL DEPORT - La marca que viste a los campeones.</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>
+
+    <!-- Menú de Navegación -->
+    <header>
+        <div class="logo">
+            <img src="IMG/FULLDEPORT 1.png" alt="FULL DEPORT" style="height: 35px; vertical-align: middle; margin-right: 8px;">
+            FULL <span>DEPORT</span>
+        </div>
+        
+        <!-- Botón Menú Hamburguesa para Celulares -->
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#contenido">Catálogos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Inicio / Hero con Video de Fondo -->
+    <section id="inicio" class="hero">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="videos/fondo.mp4" type="video/mp4">
+        </video>
+        
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <h1>FULL <span>DEPORT</span></h1>
+            <p>La marca que viste a los campeones</p>
+            <a href="#contenido" class="btn-primary">Ver Catálogos</a>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE VIDEOS DE YOUTUBE -->
+<section class="videos-section" id="videos">
+    <div class="videos-container">
+
+        <!-- VIDEO 1 -->
+        <article class="video-card">
+            <div class="video">
+                <iframe src="https://www.youtube-nocookie.com/embed/sA8LeQDH-y4?rel=0&modestbranding=1" 
+                        title="Uniformes personalizados" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3>Uniformes personalizados</h3>
+                <p>Diseñamos uniformes personalizados para equipos, colegios y clubes.</p>
+            </div>
+        </article>
+
+        <!-- VIDEO 2 -->
+        <article class="video-card">
+            <div class="video">
+                <iframe src="https://www.youtube-nocookie.com/embed/jgNUPHFEn38?rel=0&modestbranding=1" 
+                        title="Ropa deportiva" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3>Ropa deportiva</h3>
+                <p>Encuentra camisetas, polos, shorts, casacas, buzos y otras prendas deportivas.</p>
+            </div>
+        </article>
+
+        <!-- VIDEO 3 -->
+        <article class="video-card">
+            <div class="video">
+                <iframe src="https://www.youtube-nocookie.com/embed/Ph4XE26m1mg?rel=0&modestbranding=1" 
+                        title="Accesorios deportivos" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-info">
+                <h3>Accesorios deportivos</h3>
+                <p>Complementa tu equipamiento con medias y accesorios deportivos para tus entrenamientos.</p>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+    <!-- Sección Contenido / Catálogos en PDF -->
+    <section id="contenido" style="background-color: #0f0f0f;">
+        <div class="section-header">
+            <span>Catálogos Oficiales</span>
+            <h2>Descarga nuestros catálogos</h2>
+            <p>Revisa las colecciones completas para damas, varones, niños y accesorios.</p>
+        </div>
+        <div class="grid-3">
+            <div class="content-card">
+                <div class="catalog-img-container">
+                    <img src="IMG/damas.jpg" alt="Catálogo Damas" class="catalog-thumb">
+                </div>
+                <h3>Catálogo Damas</h3>
+                <p>Indumentaria deportiva cómoda y con estilo diseñada para mujeres campeonas.</p>
+                <a href="PDF/catalogo_damas.pdf" target="_blank" class="btn-primary" style="margin-top: 15px; padding: 10px 20px; font-size: 0.8rem;">Ver</a>
+            </div>
+            <div class="content-card">
+                <div class="catalog-img-container">
+                    <img src="IMG/varones.jpeg" alt="Catálogo Varones" class="catalog-thumb">
+                </div>
+                <h3>Catálogo Varones</h3>
+                <p>Uniformes y conjuntos de alto rendimiento para torneos y competencias.</p>
+                <a href="PDF/catalogo_varones.pdf" target="_blank" class="btn-primary" style="margin-top: 15px; padding: 10px 20px; font-size: 0.8rem;">Ver</a>
+            </div>
+            <div class="content-card">
+                <div class="catalog-img-container">
+                    <img src="IMG/niños.jpg" alt="Catálogo Niños" class="catalog-thumb">
+                </div>
+                <h3>Catálogo Niños</h3>
+                <p>Equipamiento deportivo especial para las futuras promesas del deporte.</p>
+                <a href="PDF/catalogo_niños.pdf" target="_blank" class="btn-primary" style="margin-top: 15px; padding: 10px 20px; font-size: 0.8rem;">Ver</a>
+            </div>
+            <div class="content-card">
+                <div class="catalog-img-container">
+                    <img src="IMG/medias.jpg" alt="Catálogo Medias" class="catalog-thumb">
+                </div>
+                <h3>Catálogo Medias</h3>
+                <p>Accesorios esenciales y medias deportivas con máxima durabilidad.</p>
+                <a href="PDF/catalogo_medias.pdf" target="_blank" class="btn-primary" style="margin-top: 15px; padding: 10px 20px; font-size: 0.8rem;">Ver</a>
+            </div>
+        </div>
+    </section>
+
+<!-- Sección Acceso Mayorista -->
+    <section id="contacto" style="background-color: #0f0f0f; padding: 4rem 5%;">
+        <div class="section-header" style="text-align: center; margin-bottom: 2rem;">
+            <span style="color: #e60012; font-weight: bold; text-transform: uppercase; font-size: 0.9rem;">Ventas al Por Mayor</span>
+            <h2 style="color: white; font-size: 2.2rem; margin-top: 5px;">Acceso Mayorista Full Depor</h2>
+            <p style="color: #aaa; margin-top: 10px; font-size: 1rem;">Regístrate para compras al por mayor desde 50 unidades. Un asesor te contactará.</p>
+        </div>
+
+        <!-- Contenedor del Formulario -->
+        <div style="max-width: 500px; margin: 0 auto; background: white; padding: 2.5rem; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.5);">
+            <form id="form-mayorista">
+                
+                <!-- Nombre y Apellido / Negocio -->
+                <div style="margin-bottom: 1.2rem;">
+                    <label style="display: block; font-weight: 600; margin-bottom: 0.4rem; color: #333; font-size: 0.9rem;">Nombre y Apellido / Negocio</label>
+                    <input type="text" name="nombre" placeholder="Ej. Juan Pérez (Tienda Deportiva)" required style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; font-size: 0.95rem; outline: none;">
+                </div>
+
+                <!-- Número de WhatsApp -->
+                <div style="margin-bottom: 1.2rem;">
+                    <label style="display: block; font-weight: 600; margin-bottom: 0.4rem; color: #333; font-size: 0.9rem;">Número de WhatsApp</label>
+                    <input type="tel" name="whatsapp" placeholder="Ej. +51 999 999 999" required style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; font-size: 0.95rem; outline: none;">
+                </div>
+
+                <!-- Ciudad / Departamento -->
+                <div style="margin-bottom: 1.2rem;">
+                    <label style="display: block; font-weight: 600; margin-bottom: 0.4rem; color: #333; font-size: 0.9rem;">Ciudad / Departamento</label>
+                    <input type="text" name="ciudad" placeholder="Ej. Lima (La Victoria), Huancayo..." required style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; font-size: 0.95rem; outline: none;">
+                </div>
+
+                <!-- Cantidad estimada por pedido -->
+                <div style="margin-bottom: 1.2rem;">
+                    <label style="display: block; font-weight: 600; margin-bottom: 0.4rem; color: #333; font-size: 0.9rem;">Cantidad estimada por pedido (Mínimo 50)</label>
+                    <select name="cantidad" required style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; font-size: 0.95rem; outline: none; background: white;">
+                        <option value="" disabled selected>Selecciona una cantidad</option>
+                        <option value="50 a 100 unidades">De 50 a 100 unidades</option>
+                        <option value="100 a 300 unidades">De 100 a 300 unidades</option>
+                        <option value="Más de 300 unidades">Más de 300 unidades</option>
+                    </select>
+                </div>
+
+                <!-- ¿Qué productos te interesan? -->
+                <div style="margin-bottom: 1.5rem;">
+                    <label style="display: block; font-weight: 600; margin-bottom: 0.4rem; color: #333; font-size: 0.9rem;">¿Qué productos te interesan?</label>
+                    <select name="interes" required style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; font-size: 0.95rem; outline: none; background: white;">
+                        <option value="" disabled selected>Selecciona categoría</option>
+                        <option value="Zapatillas deportivas">Zapatillas deportivas</option>
+                        <option value="Ropa / Conjuntos deportivos">Ropa / Conjuntos deportivos</option>
+                        <option value="Ambos catálogos">Ambos catálogos</option>
+                    </select>
+                </div>
+
+                <!-- Botón de Envío -->
+                <button type="submit" id="btn-enviar" style="width: 100%; background-color: #e60012; color: white; border: none; padding: 14px; font-size: 1rem; font-weight: bold; border-radius: 8px; cursor: pointer; transition: background 0.3s;">
+                    Solicitar Catálogo y Precios
+                </button>
+            </form>
+        </div>
+    </section>
+
+<!-- PIE DE PÁGINA (FOOTER) SIMPLIFICADO -->
+<footer style="background-color: #080808; color: #fff; padding: 3rem 5% 1.5rem; border-top: 2px solid #222; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 3rem; margin-bottom: 2rem;">
+        
+        <!-- Columna 1: Marca y Redes Sociales -->
+        <div>
+            <h3 style="color: #fff; font-size: 1.3rem; margin-bottom: 1rem; font-weight: bold;">FULL <span style="color: #e60012;">DEPORT</span></h3>
+            <p style="color: #aaa; font-size: 0.9rem; line-height: 1.5; margin-bottom: 1.2rem;">
+                Especialistas en la confección de ropa deportiva. Calidad y confianza.
+            </p>
+            <!-- Botones de Redes Sociales -->
+            <div style="display: flex; gap: 10px;">
+                <a href="https://www.facebook.com/share/18HRHV2tkA/" target="_blank" style="background: #1877f2; color: white; padding: 8px 14px; border-radius: 5px; text-decoration: none; font-size: 0.85rem; font-weight: bold;">Facebook</a>
+                <a href="https://www.tiktok.com/@fulldeport.huancayo?_r=1&_t=ZS-9APofHAxAwO" target="_blank" style="background: #000; color: white; padding: 8px 14px; border-radius: 5px; text-decoration: none; font-size: 0.85rem; font-weight: bold; border: 1px solid #444;">TikTok</a>
+                <a href="https://wa.me/message/AVACYIEYWBLHP1" target="_blank" style="background: #25d366; color: white; padding: 8px 14px; border-radius: 5px; text-decoration: none; font-size: 0.85rem; font-weight: bold;">WhatsApp</a>
+            </div>
+        </div>
+
+        <!-- Columna 2: Ubicación / Tienda -->
+        <div>
+            <h4 style="color: #e60012; font-size: 1.1rem; margin-bottom: 1rem; text-transform: uppercase;">Ubicación</h4>
+            <p style="color: #aaa; font-size: 0.9rem; margin-bottom: 0.6rem;">📍 Satipo, Junín Nº 606 - Perú</p>
+            <p style="color: #aaa; font-size: 0.9rem; margin-bottom: 0.6rem;">Atención a provincias y todo el país</p>
+            <p style="color: #aaa; font-size: 0.9rem;">📱 WhatsApp: +51 914 819 222</p>
+        </div>
+
+    </div>
+
+    <!-- Línea de Copyright -->
+    <div style="border-top: 1px solid #1a1a1a; padding-top: 1.5rem; text-align: center; color: #777; font-size: 0.85rem;">
+        &copy; 2026 FULL DEPORT. La marca que viste a los campeones. Todos los derechos reservados.
+    </div>
+</footer>
+
+    <!-- SDK de EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <script type="text/javascript">
+        // Inicializar EmailJS con tu Public Key
+        (function() {
+            emailjs.init("tVV9nbQkGRZ05DWRJ");
+        })();
+    </script>
+
+    <!-- Scripts (Menú hamburguesa + EmailJS + Google Sheets) -->
+    <script>
+        // Menú Hamburguesa
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navList = document.querySelector('.nav-list');
+
+        mobileMenu.addEventListener('click', () => {
+            navList.classList.toggle('active');
+            mobileMenu.classList.toggle('is-active');
+        });
+
+        document.querySelectorAll('.nav-list a').forEach(link => {
+            link.addEventListener('click', () => {
+                navList.classList.remove('active');
+                mobileMenu.classList.remove('is-active');
+            });
+        });
+
+        // Conexión del Formulario con EmailJS y Google Sheets
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxfytAY8v4Fi4mfMQA7KX8KN7YSYikp1fjFat70YsKToVcoCIIszrqQvTJO99qkVTE/exec';
+        const form = document.querySelector('#form-mayorista');
+        const btnSubmit = document.querySelector('#btn-enviar');
+
+        if (form) {
+            form.addEventListener('submit', e => {
+                e.preventDefault();
+                btnSubmit.disabled = true;
+                btnSubmit.textContent = 'Enviando solicitud...';
+
+                // 1. Enviar correo electrónico mediante EmailJS
+                emailjs.sendForm('service_vqs79i', 'template_5xendge', form)
+                    .then(() => {
+                        console.log('Correo enviado con éxito por EmailJS');
+                    }, (error) => {
+                        console.error('Error al enviar correo con EmailJS:', error.text);
+                    });
+
+                // 2. Registrar los datos en Google Sheets mediante Apps Script
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => {
+                        alert('¡Registro exitoso! Un asesor de Full Depor se comunicará contigo pronto.');
+                        form.reset();
+                        btnSubmit.disabled = false;
+                        btnSubmit.textContent = 'Solicitar Catálogo y Precios';
+                    })
+                    .catch(error => {
+                        console.error('Error en Google Sheets!', error.message);
+                        alert('Hubo un error al registrar. Por favor, intenta de nuevo.');
+                        btnSubmit.disabled = false;
+                        btnSubmit.textContent = 'Solicitar Catálogo y Precios';
+                    });
+            });
+        }
+    </script>
+</body>
+</html>
